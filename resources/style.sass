@@ -1,0 +1,302 @@
+%medium-font
+    font-family: 'Gilroy-Medium', sans-serif
+    font-size: 18px
+    line-height: 21.83px
+
+%bold-font
+    font-family: 'Gilroy-Bold', sans-serif
+    font-size: 47.34px
+    line-height: 58.61px
+
+=my-font($weight,$size,$height)
+    font-family: 'Gilroy-$weight', sans-serif
+    font-size: $size
+    line-height: $height
+
+*
+    padding: 0
+    margin: 0
+
+html
+    scroll-behavior: smooth
+/* wrapper */
+// .wrapper
+//     margin: 0 250px/1440px*100% 0 250px/1440px*100%
+
+/* Header */
+.header
+    margin: 0 250px/1440px*100% 0 250px/1440px*100%
+    @media (max-device-width:600px)
+        margin: 0 30px
+/* nav */
+nav 
+    .container
+        background-color: white 
+        height: 90px
+        display: flex
+        align-items: center
+        border-color:#828282
+        border: 1px
+        border-bottom-style: solid
+        @media (max-device-width:600px)
+            display: none
+        ul
+            width: 100%
+            display: flex
+            justify-content: space-between 
+            li
+                list-style: none
+                a
+                    text-decoration: none
+                    color: #828282
+                    list-style: none
+                    font-family: 'Gilroy-Bold', sans-serif
+                    font-size: 18px
+                    line-height: 22.28px
+                    transition: color 0.2s, font-size 0.2s
+                a:hover
+                    font-size: 22px
+                    color: black
+/* Name */
+.name
+    box-sizing: content-box
+    height: 100px
+    padding: 45px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media (max-device-width:600px)
+        flex-direction: column
+        align-items: flex-start
+        height: 190px
+    .menu
+        display: none
+        @media (max-device-width:600px)
+            display: inline
+            align-self: flex-end
+            margin-bottom: -80px
+    h1
+        font-family: 'Gilroy-Bold', sans-serif
+        font-size: 47.34px
+        line-height: 58.61px
+        color: #070707
+    p
+        font-family: 'Gilroy-Medium', sans-serif
+        font-size: 18px
+        line-height: 21.83px
+    .p2
+        align-self: flex-end
+        @media (max-device-width:600px)
+            align-self: auto
+    .p3        
+        color: #828282
+        height: 100%
+        display: flex        
+        flex-wrap: wrap
+        align-content: flex-end
+        justify-content: flex-end            
+        transform: rotate(-90deg) translate(-16%, -16%)
+        @media (max-device-width:600px)
+            display: none
+        // text-align: right
+        // align-self: flex-end
+        // transform-origin: center right
+        // justify-self: flex-end
+        p
+            -webkit-font-smoothing: antialiased
+            font-family: 'Gilroy-Bold', sans-serif
+        #ENG-button
+            a
+                text-decoration: none
+                color: black
+                transition: color 0.2s, font-size 0.2s
+        #RU-button
+            a
+                text-decoration: none
+                color: #828282
+                transition: color 0.2s, font-size 0.2s
+            a:hover
+                color: black
+                
+
+
+.profile-photo
+    width: 100%
+    height: 387px
+    overflow: hidden
+    .container
+        background-image: url('img/BSPP2266.png')   
+        background-size: 100%
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        back
+        max-width: 100%
+        height: 100%
+        display: block
+        @media only screen and (max-device-width:480px)
+            background-image: url('img/BSPP2266 (1).png')   
+            background-position: top
+
+
+
+header
+    height: 768px
+    background-color: white
+
+/* About me */
+
+// #aboutme-section
+//     scroll-behavior: smooth
+
+.aboutme 
+    .container
+        height: 279px
+        background-color: #F6F6F6
+
+.aboutme
+    // margin: 0 250px/1440px*100% 0 250px/1440px*100%
+    .container
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        box-sizing: content-box
+        padding: 120px 0 107px 0
+        h1
+            font-family: 'Gilroy-Bold', sans-serif
+            font-size: 34px
+            line-height: 42px
+            margin-bottom: 17.69px
+        p
+            -webkit-font-smoothing: subpixel-antialiased
+            text-align: center
+            font-family: 'Gilroy-Medium', sans-serif
+            font-size: 18px
+            line-height: 21.8px
+            margin-bottom: 50px
+
+/* Skills */
+.skills
+    .container
+        // height: 610px
+        .text
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            box-sizing: border-box
+            // height: 293px
+            padding: 90px 0 90px 0
+            text-align: center
+            h1
+                font-family: 'Gilroy-Bold', sans-serif
+                font-size: 34px
+                line-height: 42px
+            p
+                font-family: 'Gilroy-Medium', sans-serif
+                font-size: 18px
+                line-height: 22px
+        .programs
+            box-sizing: border-box
+            margin: 0 128px/1440px*100% 0 128px/1440px*100%
+            // height:317px
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+            .program
+                margin-bottom: 110px/1440px*100%
+
+/* portfolio */
+.portfolio
+    .container
+        // height: 2253px
+        background-color: #f6f6f6
+        display: flex
+        flex-direction: column
+        align-content: center
+        justify-content: center
+        .head-section
+            box-sizing: border-box
+            // height: 203px
+            padding: 113px/1440px*100% 0 64px/1440px*100% 0 
+            h1
+                font-family: 'Gilroy-Bold', sans-serif
+                font-size: 34px
+                line-height: 42px
+                text-align: center
+        .example
+            // width: 936px/1440px*100%
+            // height: 676px
+            overflow: hidden
+            margin: 0 auto
+            margin-bottom: 100px/1440px*100%
+            text-align: center
+
+            // font-family: 'Gilroy-Medium', sans-serif
+            // font-size: 18px
+            // line-height: 21.8px
+            img
+                max-width: 100%
+                height: auto
+                display: block
+                margin-bottom: 45px/1440px*100%
+            a
+                color: black
+                text-decoration-line: underline
+                // +my-font('Medium',18px,22px)
+                @extend %medium-font
+                
+/* Footer */
+.footer
+    .container
+        // height: 622px
+        text-align: center
+        h1
+            padding: 115px/1440px*100% 0 40px/1440px*100% 0
+            font-family: 'Gilroy-Bold', sans-serif
+            font-size: 34px
+            line-height: 42px
+        .info
+            padding-bottom: 40px
+            font-family: 'Gilroy-Medium', sans-serif
+            font-size: 18px
+            line-height: 21.8px
+        .button
+            // text-align: center
+            margin: 0 auto 85px
+            box-sizing: border-box
+            height: 42px
+            width: 180px
+            padding: 9px 0
+
+            border: 1px solid
+            border-radius: 50px
+            background-color: black
+            font-family: 'Gilroy-Bold', sans-serif
+            font-size: 16px
+            line-height: 21.8px
+            transition: width 0.2s,height 0.2s
+            a
+                color: white
+                text-decoration: none
+        .button:hover
+            width: 216px
+
+        .social
+            padding-bottom: 45px
+            display: flex
+            justify-content: center
+            .social-item
+                padding: 0 30px/1440px*100%
+                transition: transform 0.2s
+            .social-item:hover
+                transform: scale(1.2)
+
+        .credits
+            padding-bottom: 115px
+            color: #828282
+            font-family: 'Gilroy-Medium'
+            font-size: 14px
+            line-height: 17px
+        
+    
